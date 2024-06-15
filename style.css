@@ -1,0 +1,122 @@
+.header {
+  background-color: #4a4a4a;
+  color: #fff;
+  padding: 12px 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+.header .row div {
+  cursor: pointer;
+  transition: color ease 0.3s;
+}
+
+.header .display-768 {
+  display: none;
+}
+
+.content {
+  margin-top: 60px;
+}
+
+.content .nav li {
+  padding: 12px 0;
+}
+
+.content .nav a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #000;
+  transition: color ease 0.3s;
+}
+
+.content .nav a:hover {
+  color: #ef4023;
+}
+
+.content .carousel img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.content .card {
+  transition: background-color ease 0.3s;
+}
+
+.content .card:hover {
+  cursor: pointer;
+  background-color: #ef4023;
+  color: #fff;
+}
+
+.content .card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.content .card h5 {
+  min-height: 100px;
+}
+
+.content .card .price {
+  font-weight: bold;
+  color: #ef4023;
+  transition: color ease 0.3s;
+}
+
+.content .card:hover .price {
+  color: #fff;
+}
+
+.footer {
+  background-color: #4a4a4a;
+  color: #fff;
+  padding: 12px 0;
+  margin-top: 30px;
+}
+@media (min-width: 769px) {
+  .header .row div:hover {
+    color: #ef4023;
+  }
+}
+
+@media (max-width: 1024px) {
+  .content {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .none-768 {
+    display: none;
+  }
+  .header .display-768 {
+    display: flex;
+    float: right;
+  }
+
+  .header .display-768 i {
+    margin-left: 100px;
+    position: relative;
+  }
+  .header .display-768 i:hover ul {
+    /* display: block; */
+  }
+  .header .display-768 ul {
+    display: none;
+    list-style: none;
+    position: absolute;
+    min-width: 150px;
+    top: 40px;
+    background-color: #4a4a4a;
+  }
+  .header .display-768 ul li  {
+    padding: 12px 0;
+  }
+
+  .none-mobile {
+    display: none;
+  }
+}
